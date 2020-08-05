@@ -69,4 +69,8 @@ Think. Compare and contrast the:
 Question:
 1) What did you learn from this problem? Why would we want to refactor the code to be
 like the Composable implementation?
+
+Answer:
+1)  ส่วนงานที่มีการทำงานคล้ายคลึงกัน ควรจะแยกออกมาเป็นอีก function แล้วใช้ซ้ำ (Composable) ทำให้
+    ถ้ามีการแก้ไขส่วนงานนั้น ก็ไม่ต้องแก้ไขแยกในแต่ละส่วนงาน แต่แก้ไขแค่ function ที่แยกออกมา
 */

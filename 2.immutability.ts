@@ -11,7 +11,7 @@ Questions:
 3) What did you learn from this exercise?
 */
 function safeDivide(): number {
-    let x: number = 42;
+    const x: number = 42;
 
     if (x == 0) throw new Error("x should not be 0");
 
@@ -19,3 +19,12 @@ function safeDivide(): number {
 
     return 42 / x;
 }
+
+console.log(safeDivide());
+
+/*
+Answers:
+1)  Line 18: x is changed to x - 42
+2)  Change let to const so x will be immutable
+3)  Typescript variables can be assigned to mutable or immutable
+*/

@@ -16,7 +16,7 @@ Questions:
 1) What did you learn from this exercise?
 */
 class SafeDivisor {
-    divisor: number = 1;
+    private divisor: number = 1; // add `private`
 
     setDivisor(value: number) {
         if (value == 0) {
@@ -33,6 +33,13 @@ class SafeDivisor {
 function exploit(): number {
     let sd = new SafeDivisor();
 
-    sd.divisor = 0;
+    sd.divisor = 0; // now this line will be unable to compile so change this line to `sd.setDivisor(0)` instead
     return sd.divide(42); 
 }
+
+console.log(exploit())
+
+/* 
+Answer:
+1) Typescript has the encapsulation concept which you cannot access private members from outside
+ */
